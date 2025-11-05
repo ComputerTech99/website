@@ -3,341 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ojash Gupta | Developer</title>
+    <meta name="description" content="Ojash Gupta - Developer and Cybersecurity Specialist. Building secure digital systems and innovative solutions.">
+    <meta name="keywords" content="Ojash Gupta, Developer, Cybersecurity, Ethical Hacking, Web Development">
+    <meta name="author" content="Ojash Gupta">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ojash Gupta | Developer">
+    <meta property="og:description" content="Building secure digital systems and innovative solutions.">
+    <meta property="og:type" content="website">
+
+    <title>Ojash Gupta | Developer & Cybersecurity Specialist</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Logo.png">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
 
-        body {
-            background-color: #000;
-            color: #fff;
-            line-height: 1.6;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            padding: 0 50px;
-            margin: 0 auto;
-        }
-
-        /* Header & Navigation */
-        header {
-            padding: 40px 0;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-weight: bold;
-            font-size: 36px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-item {
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-number {
-            color: #888;
-            font-size: 14px;
-            margin-right: 5px;
-        }
-
-        .nav-text {
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-text:hover {
-            color: #888;
-        }
-
-        .resume-button {
-            border: 1px solid #888;
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .resume-button:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 100px 0;
-        }
-
-        .hero-small {
-            color: #888;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .hero-name {
-            font-size: 72px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .hero-title {
-            font-size: 56px;
-            font-weight: bold;
-            color: #888;
-            margin-bottom: 30px;
-        }
-
-        .hero-description {
-            max-width: 540px;
-            color: #aaa;
-            font-size: 18px;
-            margin-bottom: 50px;
-            line-height: 1.6;
-        }
-
-        .hero-button {
-            display: inline-block;
-            border: 1px solid #888;
-            padding: 15px 30px;
-            border-radius: 5px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .hero-button:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        /* Sections */
-        .section {
-            padding: 100px 0;
-        }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-        }
-
-        .section-number {
-            color: #888;
-            font-size: 20px;
-            margin-right: 10px;
-        }
-
-        .section-title {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .section-line {
-            flex: 1;
-            height: 1px;
-            background-color: #333;
-            margin-left: 20px;
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-card {
-            background-color: #111;
-            padding: 25px;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .skill-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .skill-description {
-            color: #888;
-            font-size: 16px;
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .project-card {
-            background-color: #111;
-            padding: 30px;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-status {
-            color: #888;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-
-        .project-title {
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        .project-description {
-            color: #888;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .project-link {
-            display: inline-block;
-            border: 1px solid #888;
-            padding: 10px 20px;
-            border-radius: 20px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .project-link:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        /* Footer */
-        footer {
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .footer-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .footer-description {
-            color: #888;
-            max-width: 500px;
-            margin: 0 auto 30px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        .social-icon {
-            color: #fff;
-            font-size: 22px;
-            transition: color 0.3s ease;
-        }
-
-        .social-icon:hover {
-            color: #888;
-        }
-
-        .footer-copyright {
-            color: #888;
-            font-size: 14px;
-        }
-
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            .container {
-                padding: 0 20px;
-            }
-
-            .hero-name, .hero-title {
-                font-size: 42px;
-            }
-
-            .hero-description {
-                font-size: 16px;
-            }
-
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-to-main">Skip to main content</a>
+
+    <header role="banner">
         <div class="container">
-            <nav class="navbar">
-                <div class="logo">O</div>
+            <nav class="navbar" role="navigation" aria-label="Main navigation">
+                <div class="logo" aria-label="Ojash Gupta">O</div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
                 <ul class="nav-links">
                     <li class="nav-item">
-                        <span class="nav-number">01.</span>
+                        <span class="nav-number" aria-hidden="true">01.</span>
                         <a href="#about" class="nav-text">About</a>
                     </li>
                     <li class="nav-item">
-                        <span class="nav-number">02.</span>
+                        <span class="nav-number" aria-hidden="true">02.</span>
                         <a href="#skills" class="nav-text">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <span class="nav-number">03.</span>
+                        <span class="nav-number" aria-hidden="true">03.</span>
                         <a href="#work" class="nav-text">Work</a>
                     </li>
                     <li class="nav-item">
-                        <span class="nav-number">04.</span>
+                        <span class="nav-number" aria-hidden="true">04.</span>
                         <a href="#contact" class="nav-text">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <span class="nav-number">05.</span>
+                        <span class="nav-number" aria-hidden="true">05.</span>
                         <a href="history.html" class="nav-text">History</a>
                     </li>
                     <li class="nav-item">
-                        <span class="nav-number">06.</span>
+                        <span class="nav-number" aria-hidden="true">06.</span>
                         <a href="updates.html" class="nav-text">Updates</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="resume-button">Resume</a>
+                    </li>
                 </ul>
-                <a href="/contact.html" class="resume-button" target="_blank">Resume</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
+    <main id="main" role="main">
+        <section class="hero" aria-label="Introduction">
             <div class="container">
                 <p class="hero-small">Hi, my name is</p>
                 <h1 class="hero-name">Ojash Gupta.</h1>
@@ -351,7 +87,7 @@
             </div>
         </section>
 
-        <section id="about" class="section">
+        <section id="about" class="section fade-in">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">01.</span>
@@ -359,15 +95,15 @@
                     <div class="section-line"></div>
                 </div>
                 <p class="hero-description">
-                    I'm a developer with a passion for cybersecurity and building 
-                    digital solutions. My journey in tech started at a young age, 
-                    exploring the limits of computer systems and developing 
+                    I'm a developer with a passion for cybersecurity and building
+                    digital solutions. My journey in tech started at a young age,
+                    exploring the limits of computer systems and developing
                     a keen interest in ethical hacking.
                 </p>
             </div>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="section fade-in">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">02.</span>
@@ -403,7 +139,7 @@
             </div>
         </section>
 
-        <section id="work" class="section">
+        <section id="work" class="section fade-in">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">03.</span>
@@ -433,7 +169,7 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section fade-in">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">04.</span>
@@ -452,47 +188,38 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <h2 class="footer-title">Join me on social!</h2>
             <p class="footer-description">Get to know more about me and my work</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/ojash.gupta.14/" target="_blank" class="social-icon">
-                    <i class="fab fa-instagram"></i>
+            <div class="social-icons" role="navigation" aria-label="Social media links">
+                <a href="https://www.instagram.com/ojash.gupta.14/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="https://twitter.com/Compute10021701" target="_blank" class="social-icon">
-                    <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/Compute10021701" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                 </a>
-                <a href="https://discord.com/tech1690/" target="_blank" class="social-icon">
-                    <i class="fab fa-discord"></i>
+                <a href="https://discord.com/tech1690/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Discord">
+                    <i class="fab fa-discord" aria-hidden="true"></i>
                 </a>
-                <a href="https://github.com/ComputerTech99/Tech" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/ComputerTech99/Tech" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/ojash-gupta-3b2167216" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/ojash-gupta-3b2167216" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-                <a href="https://stackoverflow.com/users/21220225" target="_blank" class="social-icon">
-                    <i class="fab fa-stack-overflow"></i>
+                <a href="https://stackoverflow.com/users/21220225" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Stack Overflow">
+                    <i class="fab fa-stack-overflow" aria-hidden="true"></i>
                 </a>
-                <a href="http://www.youtube.com/@computertech6693" target="_blank" class="social-icon">
-                    <i class="fab fa-youtube"></i>
+                <a href="http://www.youtube.com/@computertech6693" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
                 </a>
             </div>
             <p class="footer-copyright">© 2025 Ojash Gupta. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
